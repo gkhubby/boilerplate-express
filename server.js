@@ -31,3 +31,8 @@ bGround.setupBackgroundApp(app, myApp, __dirname).listen(port, () => {
  * the verification process may break
  * ***************************************************/
 
+app.get('/', function routeHandler(req, res) {
+  res.send('ok');
+});
+
+// res.json({foo: "bar"})
